@@ -1,0 +1,127 @@
+/* :root {
+--background-secondary-lighter: #080707;
+} */
+
+.NativeTitlebar\.module__controlButton___ZWZkOD{
+    border-radius: 0;
+    border: 2px solid var(--background-tertiary);
+    height: 100%;
+    width: 64px;
+    transition-duration: 150ms;
+}
+.NativeTitlebar\.module__controlButton___ZWZkOD:hover {
+    background:transparent;
+    border-color: var(--accent-primary);
+}
+.NativeTitlebar\.module__closeButton___ZWZkOD:hover {
+    background:transparent;
+    border-color: #e81123;
+}
+.NativeTitlebar\.module__controls___ZWZkOD {
+    height: 32px;
+    column-gap: 2px;
+}
+.NativeTitlebar\.module__titlebar___ZWZkOD {
+    padding: 0;
+    gap: 2px;
+}
+.NativeTitlebar\.module__spacer___ZWZkOD {
+    display: none;
+}
+.NativeTitlebar\.module__left___ZWZkOD:hover{ /* Impossible due to drag region of electron */
+    border-color: var(--accent-primary);
+}
+.NativeTitlebar\.module__left___ZWZkOD{
+    flex-grow: 1;
+    overflow: hidden;
+    border: 2px solid var(--background-tertiary);
+    height: 100%;
+    transition-duration: 150ms;
+}
+.NativeTitlebar\.module__left___ZWZkOD svg {
+    left: 50dvw;
+    transform: translateX(-50%);
+    position: relative;
+}
+.GuildsLayout\.module__guildListScrollContainer___XzkwZG {
+    margin-top: 2px;
+    border-radius: 0;
+    border: 2px solid var(--background-tertiary);
+    box-sizing: border-box;
+    transition-duration: 150ms;
+}
+.GuildsLayout\.module__guildListScrollContainer___XzkwZG:hover {
+    border-color: var(--accent-primary);
+}
+.GuildsLayout\.module__guildListScrollerWrapper___XzkwZG {
+    padding-bottom: 5px;
+}
+.GuildsLayout\.module__userAreaWrapper___XzkwZG {
+    margin-top: 2px;
+    border-radius: 0;
+    border: 2px solid var(--background-tertiary);
+    box-sizing: border-box;
+    transition-duration: 150ms;
+}
+.GuildsLayout\.module__userAreaWrapper___XzkwZG:hover {
+    border-color: var(--accent-primary);
+}
+.UserArea\.module__userAreaContainer___XzEyMT {
+    min-height: calc(var(--layout-user-area-height) - 4px);
+    height: calc(var(--layout-user-area-height) - 4px);
+}
+
+.GuildsLayout\.module__guildListScrollContainer___XzkwZG {
+padding-top: 0;
+}
+
+.GuildsLayout\.module__guildListTopSection___XzkwZG {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    padding-top: 6px;
+    background: var(--background-secondary);
+    box-shadow: 0px 3px 6px 6px var(--background-secondary);
+}
+
+.GuildsLayout\.module__guildListTopSection___XzkwZG {
+    gap: 0;
+}
+
+.GuildsLayout\.module__fluxerButton___XzkwZG .GuildsLayout\.module__guildListItem___XzkwZG {
+    margin-bottom: 6px;
+}
+
+.ScrollIndicatorOverlay\.module__indicatorSlot___XzU2Yj.ScrollIndicatorOverlay\.module__indicatorSlotTop___XzU2Yj > 
+.ScrollIndicatorOverlay\.module__indicator___XzU2Yj.ScrollIndicatorOverlay\.module__indicatorMention___XzU2Yj {
+    top: 146px;
+    position: fixed;
+}
+
+.GuildsLayout\.module__guildIndicatorBar___XzkwZG {
+    border-radius: 0;
+    transition-duration: 150ms;
+}
+
+.GuildsLayout\.module__guildListScrollerWrapper___XzkwZG:hover :has(.GuildsLayout\.module__guildIndicatorBar___XzkwZG) > .GuildsLayout\.module__guildIndicatorBar___XzkwZG {
+    background: var(--accent-primary);
+}
+.GuildFolderItem\.module__collapsedFolderBackground___XzQ1Nz {
+    background: transparent;
+    border-radius: 0;
+    border: 2px solid var(--folder-surface);
+    transition-duration: 150ms;
+}
+
+.GuildsLayout\.module__guildListItemSlot___XzkwZG:hover .GuildFolderItem\.module__collapsedFolderBackground___XzQ1Nz{
+    background: var(--folder-surface);
+    border-color: rgb(from var(--folder-surface) calc(r * 2) calc(g * 2) calc(b * 2));
+}
+
+.GuildsLayout\.module__guildVoiceBadgeInner___XzkwZG {
+    border-radius: 0;
+}
+
+.GuildFolderItem\.module__miniGuildIcon___XzQ1Nz {
+    border-radius: 0;
+}
