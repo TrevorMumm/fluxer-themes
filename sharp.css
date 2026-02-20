@@ -98,6 +98,10 @@ padding-top: 0;
     position: fixed;
 }
 
+.ScrollIndicatorOverlay\.module__indicator___XzU2Yj.ScrollIndicatorOverlay\.module__indicatorMention___XzU2Yj, .ScrollIndicatorOverlay\.module__indicator___XzU2Yj {
+    border-radius: 0;
+}
+
 .GuildsLayout\.module__guildIndicatorBar___XzkwZG {
     border-radius: 0;
     transition-duration: 150ms;
@@ -123,5 +127,55 @@ padding-top: 0;
 }
 
 .GuildFolderItem\.module__miniGuildIcon___XzQ1Nz {
+    border-radius: 0;
+    transition-duration: 150ms;
+}
+
+.GuildsLayout\.module__guildListItemSlot___XzkwZG:hover :has(.GuildsLayout\.module__guildVoiceBadgeInner___XzkwZG) > .GuildsLayout\.module__guildVoiceBadgeInner___XzkwZG {
+    box-shadow: 0 0 0 3px rgb(from var(--folder-surface) calc(r * 2) calc(g * 2) calc(b * 2));
+}
+
+.GuildFolderItem\.module__expandedFolderBackground___XzQ1Nz {
+    width: calc((100% - var(--folder-expanded-surface-size)) / 2.0 + var(--folder-expanded-surface-size) + 10px);
+    left: calc((100% - var(--folder-expanded-surface-size)) / 2.0 + 50% - 8px);
+    border-radius: 0;
+    border: 2px solid var(--folder-surface);
+    border-right: none;
+    background: transparent;
+    transition-duration: 150ms;
+}
+
+.GuildFolderItem\.module__folderContainer___XzQ1Nz:hover .GuildFolderItem\.module__expandedFolderBackground___XzQ1Nz {
+    border-color: rgb(from var(--folder-surface) calc(r * 2) calc(g * 2) calc(b * 2));
+    background: var(--folder-surface);
+}
+
+.GuildsLayout\.module__guildIcon___XzkwZG {
+    border-radius: 0 !important;
+    transition-duration: 150ms;
+    margin-left: 0px;
+    transition-property: margin-left;
+}
+
+.GuildsLayout\.module__guildListItem___XzkwZG:hover .GuildsLayout\.module__guildIcon___XzkwZG {
+    margin-left: 8px;
+}
+
+.GuildsLayout\.module__guildIconSelected___XzkwZG {
+    border-radius: 0 !important;
+    margin-left: 8px;
+}
+
+.GuildsLayout\.module__addGuildButtonIcon___XzkwZG {
+    border-radius: 0 !important;
+}
+
+.GuildsLayout\.module__guildBadgeActive___XzkwZG, .MentionBadge\.module__badge___XzgyZG {
+    border-radius: 0;
+}
+.GuildFolderItem\.module__folderHeader___XzQ1Nz.GuildFolderItem\.module__dropIndicatorInside___XzQ1Nz :has(.GuildFolderItem\.module__collapsedFolder___XzQ1Nz) > .GuildFolderItem\.module__collapsedFolder___XzQ1Nz {
+    border-radius: 0;
+}
+.GuildsLayout\.module__combinePreviewGrid___XzkwZG {
     border-radius: 0;
 }
