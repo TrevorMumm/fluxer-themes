@@ -1,6 +1,22 @@
-/* :root {
---background-secondary-lighter: #080707;
-} */
+:root {
+    --background-secondary-lighter: #0E0F0E;
+    --bg-secondary: #111211;
+    --bg-tertiary: #181A18;
+    --bg-primary: #0F0F0F;
+    --background-primary: #0B0E0B;
+    --background-secondary: #101210;
+    --background-secondary-alt: #0E0F0E;
+    --background-tertiary: #141714;
+    --background-textarea: #0B0E0B;
+    --accent-primary: #228514;
+    --brand-primary: #228514;
+    --brand-secondary: #228514;
+    --brand-primary-light: #5BD649;
+    --bg-code: #030202;
+    --background-header-primary: #0B0E0B;
+    --background-header-secondary: #0B0E0B;
+    --background-header-primary-hover: #0B0E0B;
+}
 
 .NativeTitlebar\.module__controlButton___ZWZkOD{
     border-radius: 0;
@@ -106,8 +122,16 @@ padding-top: 0;
     border-radius: 0;
     transition-duration: 150ms;
 }
+.GuildFolderItem\.module__folderIndicatorBar___XzQ1Nz {
+    border-radius: 0;
+    transition-duration: 150ms;
+}
 
 .GuildsLayout\.module__guildListScrollerWrapper___XzkwZG:hover :has(.GuildsLayout\.module__guildIndicatorBar___XzkwZG) > .GuildsLayout\.module__guildIndicatorBar___XzkwZG {
+    background: var(--accent-primary);
+}
+
+.GuildsLayout\.module__guildListScrollerWrapper___XzkwZG:hover :has(.GuildFolderItem\.module__folderIndicatorBar___XzQ1Nz) > .GuildFolderItem\.module__folderIndicatorBar___XzQ1Nz {
     background: var(--accent-primary);
 }
 .GuildFolderItem\.module__collapsedFolderBackground___XzQ1Nz {
@@ -179,3 +203,94 @@ padding-top: 0;
 .GuildsLayout\.module__combinePreviewGrid___XzkwZG {
     border-radius: 0;
 }
+.GuildsLayout\.module__guildDivider___XzkwZG {
+    opacity: 0;
+}
+
+/* #region Custom theme css input field */
+.FormSurface\.module__surface___XzQ4ZT.Input\.module__input___ZGQ3MT.Scroller\.module__scroller___ZTgyZD.Input\.module__focusable___ZGQ3MT {
+    min-height: 512px !important;
+    max-height: none !important;
+    border-radius: 0;
+    border: 2px solid var(--background-tertiary);
+    background: var(--background-secondary);
+    transition-duration: 150ms;
+}
+
+.FormSurface\.module__surface___XzQ4ZT.Input\.module__input___ZGQ3MT.Scroller\.module__scroller___ZTgyZD.Input\.module__focusable___ZGQ3MT:hover {
+    border-color: var(--accent-primary);
+}
+.GuildLayout\.module__guildLayoutContent___Xzk4ZG {
+    column-gap: 2px;
+}
+/* #endregion */
+
+.Button\.module__button___Yzg1Yz {
+    border-radius: 0;
+}
+
+/* #region main messaging body */
+html.platform-native:not(.platform-macos) .GuildsLayout\.module__outlineFrame___XzkwZG {
+    --outline-radius: 0;
+    margin-top: 2px;
+    margin-left: 2px;
+    border: none;
+}
+.OutlineFrame\.module__divider___ZmU4ZG {
+    display: none;
+}
+/* #endregion */
+
+/* #region Guild sidebar */
+.GuildLayout\.module__guildLayoutContent___Xzk4ZG {
+    grid-template-columns: calc(var(--layout-sidebar-width) - 2px) minmax(0, 1fr);
+    column-gap: 2px;
+}
+html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNavbar\.module__guildNavbarContainer___Xzc4Nm {
+    border-radius: 0;
+    width: calc(var(--layout-sidebar-width) - 2px);
+}
+.GuildHeader\.module__headerContainer___ZGNlOD {
+    border: 2px solid var(--background-tertiary);
+    border-bottom: none;
+    transition-duration: 150ms;
+}
+html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNavbar\.module__guildNavbarContainer___Xzc4Nm:hover .GuildHeader\.module__headerContainer___ZGNlOD {
+    border-color: var(--accent-primary);
+    background: none;
+}
+.GuildHeader\.module__headerContainerNoBanner___ZGNlOD:hover, .GuildHeader\.module__headerContainerActive___ZGNlOD {
+    border-color: var(--accent-primary);
+    background: none;
+}
+.ChannelListContent\.module__channelListScrollerWrapper___XzdlNz {
+    border: 2px solid var(--background-tertiary);
+    border-top: none;
+    margin-bottom: 5px;
+}
+html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNavbar\.module__guildNavbarContainer___Xzc4Nm:hover .ChannelListContent\.module__channelListScrollerWrapper___XzdlNz {
+    border-color: var(--accent-primary);
+    background: none;
+}
+
+.ChannelItemSurface\.module__channelItemSurfaceSelected___YTdjZW {
+    color: var(--accent-primary);
+    background: none;
+    transform: translateX(8px);
+}
+.ChannelItemSurface\.module__channelItemSurface___YTdjZW:hover {
+    color: var(--accent-primary);
+    background: none;
+}
+/* #endregion */
+
+/* #region settings */
+#root {
+    filter: blur(0px);
+    transition-duration: 150ms;
+}
+:has(.Modal\.module__modalBackdrop___XzA4MW) :has(#root)>#root {
+    filter: blur(4px);
+}
+
+/* #endregion */
