@@ -73,11 +73,13 @@
     padding-bottom: 5px;
 }
 .GuildsLayout\.module__userAreaWrapper___XzkwZG {
-    margin-top: 2px;
     border-radius: 0;
     border: 2px solid var(--background-tertiary);
     box-sizing: border-box;
     transition-duration: 150ms;
+}
+.UserArea\.module__separator___XzEyMT {
+    display: none;
 }
 .GuildsLayout\.module__userAreaWrapper___XzkwZG:hover {
     border-color: var(--accent-primary);
@@ -246,41 +248,44 @@ html.platform-native:not(.platform-macos) .GuildsLayout\.module__outlineFrame___
     grid-template-columns: calc(var(--layout-sidebar-width) - 2px) minmax(0, 1fr);
     column-gap: 2px;
 }
+
 html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNavbar\.module__guildNavbarContainer___Xzc4Nm {
     border-radius: 0;
-    width: calc(var(--layout-sidebar-width) - 2px);
-}
-.GuildHeader\.module__headerContainer___ZGNlOD {
     border: 2px solid var(--background-tertiary);
-    border-bottom: none;
+    width: calc(var(--layout-sidebar-width) - 2px);
+    height: calc(100% - var(--layout-user-area-height) - 4px);
+    background: none;
     transition-duration: 150ms;
 }
-html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNavbar\.module__guildNavbarContainer___Xzc4Nm:hover .GuildHeader\.module__headerContainer___ZGNlOD {
+html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNavbar\.module__guildNavbarContainer___Xzc4Nm:hover {
     border-color: var(--accent-primary);
+}
+.ChannelItem\.module__channelItemSelected___Xzk5Zm {
     background: none;
-}
-.GuildHeader\.module__headerContainerNoBanner___ZGNlOD:hover, .GuildHeader\.module__headerContainerActive___ZGNlOD {
-    border-color: var(--accent-primary);
-    background: none;
-}
-.ChannelListContent\.module__channelListScrollerWrapper___XzdlNz {
-    border: 2px solid var(--background-tertiary);
-    border-top: none;
-    margin-bottom: 5px;
-}
-html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNavbar\.module__guildNavbarContainer___Xzc4Nm:hover .ChannelListContent\.module__channelListScrollerWrapper___XzdlNz {
-    border-color: var(--accent-primary);
-    background: none;
-}
-
-.ChannelItemSurface\.module__channelItemSurfaceSelected___YTdjZW {
     color: var(--accent-primary);
-    background: none;
-    transform: translateX(8px);
+}
+.ChannelItem\.module__container___Xzk5Zm:has(.ChannelItem\.module__channelItemSelected___Xzk5Zm) .ChannelItem\.module__container___Xzk5Zm {
+    padding-left: 8px;
 }
 .ChannelItemSurface\.module__channelItemSurface___YTdjZW:hover {
     color: var(--accent-primary);
     background: none;
+    padding-left: 8px;
+}
+.ChannelItem\.module__container___Xzk5Zm {
+    transition-duration: 150ms;
+}
+.ChannelItem\.module__container___Xzk5Zm:hover {
+    color: var(--accent-primary);
+    background: none;
+    padding-left: 8px;
+}
+
+.ScrollerTrack\.module__vertical___YzkyYz .ScrollerTrack\.module__thumb___YzkyYz {
+    border-radius: 0;
+}
+.ScrollerTrack\.module__vertical___YzkyYz .ScrollerTrack\.module__thumb___YzkyYz:hover {
+    background: var(--accent-primary);
 }
 /* #endregion */
 
