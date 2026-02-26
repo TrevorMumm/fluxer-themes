@@ -16,8 +16,11 @@ Currently done:
 - [x] Titlebar
 - [x] Guild Navbar
 - [x] Guild Channel list
-- [ ] Guild Member list
-- [ ] Channel Chat
+- [x] Guild Member list
+- [x] Channel Chat
 - [ ] Voice Call
 - [ ] Settings
 - [ ] Profile cards
+- [ ] Direct mesages
+- [ ] Friends list
+- [ ] Misc (popups, temporary elements like upload progress or similar)

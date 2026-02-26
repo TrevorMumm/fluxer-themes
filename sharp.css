@@ -16,6 +16,7 @@
     --background-header-primary: #0B0E0B;
     --background-header-secondary: #0B0E0B;
     --background-header-primary-hover: #0B0E0B;
+    --media-border-radius: 0;
     --background-image-brightness: 0.8; /* 0.0-1.0+. 0 means darker, 1 means default brightness, more than 1 mens lighter */
     --background-image-blur-strength: 4px;
     /* --background-image-base64: url("") var(--background-secondary); */
@@ -319,8 +320,8 @@ html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNa
 /* #region main chat body */
 .GuildLayout\.module__guildMainContent___Xzk4ZG {
     background: var(--background-image-base64);
-    background-size: 100dvw 100dvh;
-    background-position: right bottom;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     border: 2px solid var(--bg-tertiary);
     transition-duration: 150ms;
@@ -335,5 +336,66 @@ html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNa
 .ChannelLayout\.module__channelLayoutContainer___XzM0MT {
     backdrop-filter: blur(var(--background-image-blur-strength)) brightness(var(--background-image-brightness));
     background: none;
+}
+/* #endregion */
+
+/* #region messages */
+.Divider\.module__line___XzVjNm:first-child {
+    max-width: 44px;
+}
+.Divider\.module__container___XzVjNm {
+    padding: 0;
+}
+.Divider\.module__text___XzVjNm {
+    background: none;
+}
+.Message\.module__message___XzQ1Zj:hover, .Message\.module__messageCompact___XzQ1Zj:hover {
+    background: linear-gradient(90deg, var(--background-modifier-hover) 0%, transparent 30%, transparent 70%, var(--background-modifier-hover) 100%);
+}
+.ExpiryFootnote\.module__footnote___XzI4YT {
+    opacity: 0%;
+    transition-duration: 150ms;
+}
+.Message\.module__message___XzQ1Zj:hover  :has(.ExpiryFootnote\.module__footnote___XzI4YT)>.ExpiryFootnote\.module__footnote___XzI4YT,
+.Message\.module__messageCompact___XzQ1Zj:hover :has(.ExpiryFootnote\.module__footnote___XzI4YT)>.ExpiryFootnote\.module__footnote___XzI4YT {
+    opacity: 100%;
+}
+.VideoPlayer\.module__container___XzM1ZW {
+    border-radius: 0;
+}
+/* #endregion */
+
+/* #region member list */
+
+.BaseAvatar\.module__overlay___XzZkNT {
+    border-radius: 0 !important;
+    background: var(--background-secondary-alt);
+    z-index: 2;
+}
+.BaseAvatar\.module__overlay___XzZkNT image {
+    mask: none !important;
+}
+.BaseAvatar\.module__statusContainer___XzZkNT {
+    border-radius: 0 !important;
+    transform: translateX(2px) translateY(2px) scale(150%);
+    transform-origin: bottom right;
+    z-index: 1;
+}
+.BaseAvatar\.module__statusContainer___XzZkNT svg rect{
+    mask: none !important;
+}
+.BaseAvatar\.module__statusContainer___XzZkNT {
+    transition-duration: 150ms;
+}
+.BaseAvatar\.module__statusContainer___XzZkNT:has(div) {
+    transform: translateX(10px);
+    padding-left: 4px;
+}
+.MemberListItem\.module__button___YTg2NG {
+    transition-duration: 150ms;
+}
+.MemberListItem\.module__button___YTg2NG:hover {
+    background: none;
+    padding-left: 8px;
 }
 /* #endregion */
