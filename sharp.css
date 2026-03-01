@@ -340,14 +340,22 @@ html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNa
 /* #endregion */
 
 /* #region messages */
-.Divider\.module__line___XzVjNm:first-child {
+.Divider\.module__line___XzVjNm:first-child,
+.Divider\.module__unreadLine___XzVjNm:first-child {
     max-width: 44px;
 }
-.Divider\.module__container___XzVjNm {
+.Divider\.module__container___XzVjNm,
+.Divider\.module__unreadContainer___XzVjNm {
     padding: 0;
 }
 .Divider\.module__text___XzVjNm {
     background: none;
+}
+.Divider\.module__dateWithUnreadText___XzVjNm {
+    left: 0;
+    background: none;
+    position: relative;
+    transform: none;
 }
 .Message\.module__message___XzQ1Zj:hover, .Message\.module__messageCompact___XzQ1Zj:hover {
     background: linear-gradient(90deg, var(--background-modifier-hover) 0%, transparent 30%, transparent 70%, var(--background-modifier-hover) 100%);
@@ -369,7 +377,7 @@ html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNa
 
 .BaseAvatar\.module__overlay___XzZkNT {
     border-radius: 0 !important;
-    background: var(--background-secondary-alt);
+    /* background: var(--background-secondary-alt); */
     z-index: 2;
 }
 .BaseAvatar\.module__overlay___XzZkNT image {
@@ -383,6 +391,7 @@ html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNa
 }
 .BaseAvatar\.module__statusContainer___XzZkNT svg rect{
     mask: none !important;
+    clip-path: polygon(0 10px, 10px 10px, 10px 0, 8px 0, 8px 8px, 0 8px);
 }
 .BaseAvatar\.module__statusContainer___XzZkNT {
     transition-duration: 150ms;
@@ -397,5 +406,48 @@ html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNa
 .MemberListItem\.module__button___YTg2NG:hover {
     background: none;
     padding-left: 8px;
+}
+/* #endregion */
+
+/* #region message action bar */
+
+.MessageActionBar\.module__actionBar___YzJmMW {
+    border: 2px solid var(--background-tertiary);
+    transition-duration: 150ms;
+    border-radius: 0;
+}
+.MessageActionBar\.module__actionBar___YzJmMW:hover {
+    border-color: var(--accent-primary);
+}
+
+.MessageActionBar\.module__button___YzJmMW {
+    border-radius: 0;
+    transition-duration: 150ms;
+}
+.MessageActionBar\.module__button___YzJmMW:hover {
+    background: transparent;
+    color: var(--accent-primary);
+    fill: currentColor;
+} 
+
+/* #endregion */
+
+/* #region tooltips */
+.Tooltip\.module__tooltip___XzRkMT {
+    border-radius: 0;
+    border: 2px solid var(--bg-tertiary);
+}
+.Tooltip\.module__tooltipPointer___XzRkMT > * {
+    background: red;
+}
+
+/* #endregion */
+
+/* #region skeleton elements (elements taht are shown while content is loading) */
+.ChannelMembers\.module__skeleton___Yjk5ZT,
+.ChannelMembers\.module__skeletonAvatar___Yjk5ZT,
+.ChannelMembers\.module__skeletonName___Yjk5ZT,
+.ChannelMembers\.module__skeletonStatus___Yjk5ZT {
+    border-radius: 0;
 }
 /* #endregion */
