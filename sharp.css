@@ -385,13 +385,13 @@ html.platform-native:not(.GuildNavbar\.module__platform-macos___Xzc4Nm) .GuildNa
 }
 .BaseAvatar\.module__statusContainer___XzZkNT {
     border-radius: 0 !important;
-    transform: translateX(2px) translateY(2px) scale(150%);
+    transform: translateX(2px) translateY(2px) scale(200%);
     transform-origin: bottom right;
     z-index: 1;
 }
 .BaseAvatar\.module__statusContainer___XzZkNT svg rect{
     mask: none !important;
-    clip-path: polygon(0 10px, 10px 10px, 10px 0, 8px 0, 8px 8px, 0 8px);
+    clip-path: polygon(0 10px, 10px 10px, 10px 0, 9px 0, 9px 9px, 0 9px);
 }
 .BaseAvatar\.module__statusContainer___XzZkNT {
     transition-duration: 150ms;
