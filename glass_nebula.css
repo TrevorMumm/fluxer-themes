@@ -409,12 +409,12 @@
 :root
 {
     --user-area-divider-color: rgba(0,0,0,0) !important;
-    --accent: #278350;
-    --accent-dark: #004528;
-    --accent-light: #40b373;
-    --accent-lighter: #7ecda1;
-    --accent-transparent: #278350B3;
-    --accent-transparenter: #2783504D;
+    --accent: #9a17f1c7;
+    --accent-dark: #3a0453;
+    --accent-light: #c74bf8;
+    --accent-lighter: #c968cc;
+    --accent-transparent: #5e2783b3;
+    --accent-transparenter: #4f27834d;
 }
 
 /* END */
@@ -923,12 +923,12 @@ html.platform-native:not(.platform-macos) [class*="GuildsLayout"][class*="module
 :root
 {
     --user-area-divider-color: rgba(0,0,0,0) !important;
-    --accent: #278350;
-    --accent-dark: #004528;
-    --accent-light: #40b373;
-    --accent-lighter: #7ecda1;
-    --accent-transparent: #278350B3;
-    --accent-transparenter: #2783504D;
+    --accent: #9a17f1c7;
+    --accent-dark: #3a0453;
+    --accent-light: #c74bf8;
+    --accent-lighter: #c968cc;
+    --accent-transparent: #5e2783b3;
+    --accent-transparenter: #4f27834d;
 }
 
 /* END */
